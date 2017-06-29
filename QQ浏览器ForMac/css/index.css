@@ -1,0 +1,160 @@
+html,body,section{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+section{
+    position: relative;
+}
+section.p1{
+    /*第一屏顶部区域*/
+    background: url(../images/page1_glow.png) no-repeat center 100px, linear-gradient(0deg, #395ecb 0%, #3657be 35%, #242161 75%, #1a0531 100%);
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+section.p1{
+
+}
+section.p2{
+    background: linear-gradient(0deg, #41b93e 0%, #3b9e3c 35%, #274535 75%, #190530 100%);
+}
+section.p3{
+    background: linear-gradient(0deg, #395ecb 0%, #3657be 35%, #242161 75%, #1a0531 100%);
+}
+section.p4{    background: url(../images/page4_glow.png) no-repeat center 200px, linear-gradient(0deg, #ff9f42 0%, #ed923d 35%, #6d3816 75%, #2e0b04 100%);}
+section.p5{    background: url(../images/page5_glow.png) no-repeat center -300px,linear-gradient(0deg, #d74d53 0%, #c44655 35%, #4c184c 75%, #110145 100%);}
+
+.p1-header{
+    width: 530px;
+    height: 110px;
+    position: absolute;
+    left: 50%;
+    margin-left: -256px;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.p1-header img{
+    width: 400px;
+}
+.p1-header a{
+    border: 1px solid #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.p1-main,.p1-main>ul{
+    width: 600px;
+    height: 500px;
+    /*background: red;*/
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    margin-left: -300px;
+    margin-top: -250px;
+
+
+}
+.p1-main>ul>li{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.p1-round{
+    width: 680px;
+    height: 680px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-left: -340px;
+    margin-top: -340px;
+    /*scale:缩放*/
+    transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(60deg) rotateY(0deg) rotateZ(0deg) scaleY(1) scaleY(1) scaleZ(1);
+
+
+}
+.gps{
+    width: 50px;
+    height: 200px;
+    /*弹性布局*/
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    margin-top:-100px;
+    display: flex;
+    /***flex-direction:column=>灵活的项目,将垂直显示
+    正如一个列一样****/
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.gps li{
+    width: 12px;
+    height: 12px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+}
+.gps li .current{
+    background: #FFFFFF;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.scroll{
+    width: 29px;
+    height: 31px;
+    position: fixed;
+    left: 50%;
+    bottom: 15px;
+    animation: scrollAnimtion 1s infinite alternate linear;
+
+}
+@keyframes scrollAnimtion {
+    0%{
+        transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+
+    }
+    100%{transform: translateX(0px) translateY(20px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);}
+
+
+}
+.footer .footer-left{
+    color: #FFFFFF;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+.footer .footer_right{
+    display: flex;
+    margin-right: 10px;
+}
+.footer .footer_right li{
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.footer .footer_right li span{
+    padding: 0px 5px;
+}
+
+
+
+
+
