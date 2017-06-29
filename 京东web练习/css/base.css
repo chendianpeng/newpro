@@ -1,0 +1,73 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    /*修改布局习惯,从外往里*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*清除移动端设备默认的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*transparent:设置透明*/
+}
+body{
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size:12px;
+    color: #000;
+}
+
+input,textarea{
+    outline:none;
+    /*点击有效果*/
+    border: none;
+    /*去除iOS默认的一些扁平化控件效果*/
+    -webkit-appearance: none;
+}
+a{
+    text-decoration: none;
+    /*decoration:装饰*/
+    color: #666;
+}
+ol,ul{
+    list-style: none;
+}
+ul li a{
+    display: block;
+}
+
+
+/*通常情况下,ul或者ol中的li浮动起来,ul/ol都需要去浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    /*去浮动*/
+    clear: both;
+    /*隐藏内容,但保留位置*/
+    visibility: hidden;
+}
+
+/*类名前包含xx*/
+[class^="icon_"]{
+    background: url("../images/sprites.png") no-repeat;
+    -webkit-background-size: 200px 200px;
+    background-size: 200px 200px;
+}
+/*细边框*/
+.lightborder{
+    position: relative;
+}
+.lightborder::after{
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 200%;
+    height: 200%;
+    border: 1px solid #e0e0e0;
+    -webkit-transform: scale(0.5,0.5);
+    transform: scale(0.5,0.5);
+    -webkit-transform-origin:left top ;
+    transform-origin:left top ;
+}
