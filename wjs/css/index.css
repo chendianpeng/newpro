@@ -1,0 +1,96 @@
+
+/*
+公共样式*/
+
+/*自定义字体导入*/
+@font-face {
+    /*指定自定义字体的名称*/
+    font-family: cxh;
+    src: url("../fonts/MiFie-Web-Font.svg"),
+         url("../fonts/MiFie-Web-Font.eot"),
+         url("../fonts/MiFie-Web-Font.ttf"),
+         url("../fonts/MiFie-Web-Font.woff");
+}
+/*抽取公共字体样式*/
+[class^="icon-"],
+[class*=" icon-"]{
+    font-family: cxh;
+    font-style: normal;
+}
+.icon-phone::before{
+    content: '\e908';
+    font-size: 13px;
+}
+
+.icon-tel::before{
+    content: '\e909';
+    font-size: 13px;
+}
+
+
+
+/*自定义的按钮样式*/
+.btn-regesiter {
+    color: #ffffff;
+    background-color: #E9232C;
+    border-color: #DB3B43;
+}
+
+.btn-regesiter:hover,
+.btn-regesiter:focus,
+.btn-regesiter:active,
+.btn-regesiter.active,
+.open .dropdown-toggle.btn-regesiter {
+    color: #ffffff;
+    background-color: #DB3B43;
+    border-color: #DB3B43;
+}
+
+.btn-regesiter:active,
+.btn-regesiter.active,
+.open .dropdown-toggle.btn-regesiter {
+    background-image: none;
+}
+
+.btn-regesiter.disabled,
+.btn-regesiter[disabled],
+fieldset[disabled] .btn-regesiter,
+.btn-regesiter.disabled:hover,
+.btn-regesiter[disabled]:hover,
+fieldset[disabled] .btn-regesiter:hover,
+.btn-regesiter.disabled:focus,
+.btn-regesiter[disabled]:focus,
+fieldset[disabled] .btn-regesiter:focus,
+.btn-regesiter.disabled:active,
+.btn-regesiter[disabled]:active,
+fieldset[disabled] .btn-regesiter:active,
+.btn-regesiter.disabled.active,
+.btn-regesiter[disabled].active,
+fieldset[disabled] .btn-regesiter.active {
+    background-color: #E9232C;
+    border-color: #DB3B43;
+}
+
+.btn-regesiter .badge {
+    color: #E9232C;
+    background-color: #ffffff;
+}
+
+
+
+/*头部的样式*/
+#wjs_nav{}
+#wjs_nav .toBar{}
+/*兄弟选择器*/
+#wjs_nav .toBar .row>div+div{}
+
+
+
+
+
+
+
+
+.topBar1 a img{
+    display: none;
+}
