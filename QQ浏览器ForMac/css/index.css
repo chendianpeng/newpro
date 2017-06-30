@@ -29,6 +29,11 @@ section.p3{
 section.p4{    background: url(../images/page4_glow.png) no-repeat center 200px, linear-gradient(0deg, #ff9f42 0%, #ed923d 35%, #6d3816 75%, #2e0b04 100%);}
 section.p5{    background: url(../images/page5_glow.png) no-repeat center -300px,linear-gradient(0deg, #d74d53 0%, #c44655 35%, #4c184c 75%, #110145 100%);}
 
+
+.p1{
+    perspective: 1200px;
+}
+
 .p1-header{
     width: 530px;
     height: 110px;
@@ -43,12 +48,20 @@ section.p5{    background: url(../images/page5_glow.png) no-repeat center -300px
 
 }
 .p1-header img{
-    width: 400px;
+    width: 350px;
+    vertical-align: middle;
 }
 .p1-header a{
-    border: 1px solid #FFFFFF;
-    padding: 10px 20px;
-    border-radius: 8px;
+    float: right;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid rgba(255,255,255,0.6);
+    text-align: center;
+    margin-top: 49px;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 5px;
 }
 .p1-main,.p1-main>ul{
     width: 600px;
@@ -153,6 +166,8 @@ section.p5{    background: url(../images/page5_glow.png) no-repeat center -300px
 .footer .footer_right li span{
     padding: 0px 5px;
 }
+
+
 
 
 
